@@ -196,12 +196,12 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside {
+/*.inside {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   width: 100%;
-}
+}*/
 .inside header {
   width: 100%;
 }
@@ -215,10 +215,16 @@ nav h1 a {
   height: 100%;
   width: 100%;
 }
-#resraurant-container {
+
+.inside #footer {
+	bottom: 0;
+	position: absolute;
+	width; 50%;
+}
+/*#resraurant-container {
   position: relative;
   width: 100%;
-}
+}*/
 #restaurant-name {
   color: darkred;
   font-family: Arial,sans-serif;
@@ -279,28 +285,9 @@ nav h1 a {
 #reviews-list li p {
   margin: 0 0 10px;
 }
-#reviews-list li p:nth-child(1) {
-  width: 50%;
-  font-size: 1.2em;
-  display: inline-block;
-  line-height: 1;
-}
-#reviews-list li p:nth-child(2) {
-  width: 50%;
-  display: inline-block;
-  font-size: 0.9em;
-  text-align: right;
-  line-height: 1;
-}
-#reviews-list li p:nth-child(3) {
-  color: darkred;
-  text-align: right;
-}
+
 #restaurant-hours td {
   color: #666;
-}
-.inside #footer {
-  width: 100%;
 }
 
 /* ====================== Media Queries ====================== */
@@ -326,7 +313,7 @@ nav h1 a {
   }
   #restaurants-list p {
     width: 66%;
-  }  
+  }
   #restaurants-list li h1 {
     height: 41px;
   }
